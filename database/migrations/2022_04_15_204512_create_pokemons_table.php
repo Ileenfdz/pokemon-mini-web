@@ -16,16 +16,19 @@ return new class extends Migration
         Schema::create('pokemons', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('type');
             $table->string('number');
+            $table->string('description');
+            $table->boolean('legendary')->default(false);
             $table->timestamps();
         });
-        // Se podrá filtrar por ->nombre/tipo/número/localización/si es o no legendario
-        // $table->string('description');
-        // $table->string('weaknesses');
-        // $table->string('location');
-        // $table->boolean('legendary')->default(false);
-        // data -> Height/Weight/Category/Abilities/Gender/Stats(with types)
+        // Done:
+        // -Name  -Number -Description  -legendary
+        // -Location  -Ability  -Weakness  -Type  /
+
+        // Pivots :
+        // -Location  -Ability  -Weakness  -Type  /
+
+        // data -> Height/Weight/Category/Gender/Stats(with types)
         // $table->string('image-male');
         // $table->string('image-female');
         // $table->string('image-shiny');

@@ -17,7 +17,7 @@ class TypesFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'type' => $this->faker->randomElement(['Normal', 'Fuego', 'Agua', 'Planta', 'Eléctrico', 'Hielo', 'Lucha', 'Veneno', 'Tierra', 'Volador', 'Hada', 'Acero', 'Dragon', 'Fantasma', 'Roca', 'Bicho', 'Psíquico', 'Siniestro']),
         ];
     }
 }

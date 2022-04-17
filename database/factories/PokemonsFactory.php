@@ -18,9 +18,9 @@ class PokemonsFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'type' => $this->faker->randomElement(['psíquico', 'eléctrico', 'hada', 'dragón', 'agua', 'fuego', 'planta', 'siniestro', 'fantasma', 'veneno', 'volador', 'hielo', 'lucha', 'tierra', 'bicho', 'acero', 'normal', 'roca']),
-            'number' => $this->faker->numberBetween(000, 800),
-            // Los huevos no tienen tipo
+            'number' => $this->faker->numberBetween(000, 010),
+            'description' => $this->faker->description(),
+            'legendary' => $this->faker->boolean(),
         ];
     }
 }
