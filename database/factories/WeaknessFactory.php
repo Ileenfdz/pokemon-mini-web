@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Weaknesses>
  */
-class WeaknessesFactory extends Factory
+class WeaknessFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -17,7 +17,7 @@ class WeaknessesFactory extends Factory
     public function definition()
     {
         return [
-            'weakness' => $this->faker->randomElement(['Normal', 'Fuego', 'Agua', 'Planta', 'Eléctrico', 'Hielo', 'Lucha', 'Veneno', 'Tierra', 'Volador', 'Hada', 'Acero', 'Dragon', 'Fantasma', 'Roca', 'Bicho', 'Psíquico', 'Siniestro']),
+            'name' => $this->faker->randomElement(['Normal', 'Fuego', 'Agua', 'Planta', 'Eléctrico', 'Hielo', 'Lucha', 'Veneno', 'Tierra', 'Volador', 'Hada', 'Acero', 'Dragon', 'Fantasma', 'Roca', 'Bicho', 'Psíquico', 'Siniestro']),
         ];
     }
 }

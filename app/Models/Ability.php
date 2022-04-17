@@ -10,8 +10,8 @@ class Ability extends Model
     use HasFactory;
 
     protected $fillable = [
-        'id',
-        'location',
+        'description',
+        'normal ability',
     ];
 
     public function pokemons()

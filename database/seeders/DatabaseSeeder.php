@@ -14,6 +14,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call([
+            AbilitySeeder::class,
+            // MovementTypeSeeder::class,
+            // MovementClassSeeder::class,
+            // MovementSeeder::class,
+            PokeLocationSeeder::class,
+            TypeSeeder::class,
+            WeaknessSeeder::class,
+            PokemonSeeder::class,
+        ]);
     }
 }

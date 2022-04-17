@@ -15,9 +15,8 @@ return new class extends Migration
     {
         Schema::create('abilities', function (Blueprint $table) {
             $table->id();
-            $table->string('description');
             $table->string('normal ability');
-            // $table->string('special ability');
+            $table->string('description');
             $table->timestamps();
         });
     }

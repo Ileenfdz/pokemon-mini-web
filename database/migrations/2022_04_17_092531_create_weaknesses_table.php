@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('weaknesses', function (Blueprint $table) {
             $table->id();
-            $table->string('weakness');
+            $table->string('name');
             $table->timestamps();
         });
     }

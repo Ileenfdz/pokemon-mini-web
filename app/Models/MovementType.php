@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Weakness extends Model
+class MovementType extends Model
 {
     use HasFactory;
 
@@ -13,8 +13,8 @@ class Weakness extends Model
         'name',
     ];
 
-    public function pokemons()
+    public function movements()
     {
-        return $this->belongsToMany(Pokemon::class);
+        return $this->belongsToMany(Movement::class);
     }
 }

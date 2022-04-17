@@ -13,16 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('pokemon_type', function (Blueprint $table) {
+        Schema::create('ability_pokemon', function (Blueprint $table) {
 
-        $table->id();
+            $table->id();
             $table->timestamps();
 
             $table->unsignedBigInteger('pokemon_id');
-            $table->unsignedBigInteger('type_id');
+            $table->unsignedBigInteger('ability_id');
 
             $table->foreign('pokemon_id')->references('id')->on('pokemons')->onDelete("cascade");
-            $table->foreign('type_id')->references('id')->on('types')->onDelete("cascade");
+            $table->foreign('ability_id')->references('id')->on('abilities')->onDelete("cascade");
         });
     }
 
@@ -33,7 +33,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pokemon_type');
+        Schema::dropIfExists('ability_pokemon');
 
     }
 };

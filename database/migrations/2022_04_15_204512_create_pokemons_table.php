@@ -21,17 +21,6 @@ return new class extends Migration
             $table->boolean('legendary')->default(false);
             $table->timestamps();
         });
-        // Done:
-        // -Name  -Number -Description  -legendary
-        // -Location  -Ability  -Weakness  -Type  /
-
-        // Pivots :
-        // -Location  -Ability  -Weakness  -Type  /
-
-        // data -> Height/Weight/Category/Gender/Stats(with types)
-        // $table->string('image-male');
-        // $table->string('image-female');
-        // $table->string('image-shiny');
     }
 
     /**
@@ -43,4 +32,16 @@ return new class extends Migration
     {
         Schema::dropIfExists('pokemons');
     }
+
+    // Done:
+        // -Name  -Number -Description  -legendary
+        // -Location  -Ability  -Weakness  -Type  /
+
+        // Pivots :
+        // -Location  -Ability  -Weakness  -Type  /
+
+        // data -> Height/Weight/Category/Gender/Stats(with types)
+        // $table->string('image-male');
+        // $table->string('image-female');
+        // $table->string('image-shiny');
 };

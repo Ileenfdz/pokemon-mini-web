@@ -9,17 +9,18 @@ class Pokemon extends Model
 {
     use HasFactory;
 
+    protected $table = "pokemons";
+
     protected $fillable = [
-        'id',
         'name',
         'number',
         'description',
         'legendary',
     ];
 
-    public function locations()
+    public function poke_locations()
     {
-        return $this->belongsToMany(Locations::class);
+        return $this->belongsToMany(PokeLocation::class);
     }
 
     public function types()
@@ -35,5 +36,10 @@ class Pokemon extends Model
     public function abilities()
     {
         return $this->belongsToMany(Ability::class);
+    }
+
+    public function movements()
+    {
+        return $this->belongsToMany(Movement::class);
     }
 }

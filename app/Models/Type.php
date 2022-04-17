@@ -10,8 +10,7 @@ class Type extends Model
     use HasFactory;
 
     protected $fillable = [
-        'id',
-        'type',
+        'name',
     ];
 
     public function pokemons()

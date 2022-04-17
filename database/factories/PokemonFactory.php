@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Pokemons>
  */
-class PokemonsFactory extends Factory
+class PokemonFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -20,7 +20,7 @@ class PokemonsFactory extends Factory
             'name' => $this->faker->name(),
             'number' => $this->faker->numberBetween(000, 010),
             'description' => $this->faker->description(),
-            'legendary' => $this->faker->boolean(),
+            // 'legendary' => $this->faker->boolean(),
         ];
     }
 }
