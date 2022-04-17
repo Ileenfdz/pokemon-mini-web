@@ -1,7 +1,9 @@
-<<<<<<< HEAD
-# pokemon-mini-web
-This is a repository for learning new features inspired by pokemon's web pokedex (https://www.pokemon.com/es/pokedex/)
-=======
+# Pokemon-Mini-Web
+
+<p align="center">This is a repository for learning new features inspired by pokemon's web pokedex and adding information from other sources, here are the links:</p>
+<p align="center">-> https://www.pokemon.com/es/pokedex/</p>
+<p align="center">-> https://www.wikidex.net/wiki/Lista_de_habilidades)</p>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
